@@ -72,14 +72,14 @@ class FabistronServiceProvider extends ServiceProvider
 
 
                 $eventDispatcher->listen('IO.tpl.item', function(TemplateContainer $container, $templateData) {
-                    $container->setTemplate("Fabistron::Item.SingleItemWrapper");
+                    $container->setTemplate("CeresBaseline::Item.SingleItemWrapper");
 
                     return false;
 
                 }, self::EVENT_LISTENER_PRIORITY);
 
                 $eventDispatcher->listen('IO.tpl.basket', function(TemplateContainer $container, $templateData) {
-                    $container->setTemplate("Fabistron::Basket.Basket");
+                    $container->setTemplate("CeresBaseline::Basket.Basket");
 
                     return false;
 
@@ -87,21 +87,21 @@ class FabistronServiceProvider extends ServiceProvider
 
 
                 $eventDispatcher->listen('IO.tpl.login', function(TemplateContainer $container, $templateData) {
-                    $container->setTemplate("Fabistron::Customer.Login");
+                    $container->setTemplate("CeresBaseline::Customer.Login");
 
                     return false;
 
                 }, self::EVENT_LISTENER_PRIORITY);
 
                 $eventDispatcher->listen('IO.tpl.register', function(TemplateContainer $container, $templateData) {
-                    $container->setTemplate("Fabistron::Customer.Register");
+                    $container->setTemplate("CeresBaseline::Customer.Register");
 
                     return false;
 
                 }, self::EVENT_LISTENER_PRIORITY);
 
                 $eventDispatcher->listen('IO.tpl.search', function(TemplateContainer $container, $templateData) {
-                    $container->setTemplate("Fabistron::ItemList.ItemListView");
+                    $container->setTemplate("CeresBaseline::ItemList.ItemListView");
 
                     return false;
 
@@ -113,7 +113,7 @@ class FabistronServiceProvider extends ServiceProvider
         // Register reference types for logs.
         try
         {
-            $referenceContainer->add([ 'FabistronId' => 'FabistronId' ]);
+            $referenceContainer->add([ 'CeresBaselineId' => 'CeresBaselineId' ]);
         }
         catch(ReferenceTypeException $ex)
         {
