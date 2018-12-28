@@ -1,3 +1,4 @@
 /* Enter your CSS here */
 
 h1 {border: 1px solid #F00}
+#single-carousel .owl-item img {height: 300px!important}
