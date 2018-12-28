@@ -1,0 +1,37 @@
+{
+    "version"           :   "0.0.1",
+    "license"           :   "",
+    "name"              :   "Fabistron",
+    "email"             :   "lr@fabistron.de",
+    "description"       :   "A Fabistron theme for Ceres.",
+    "shortDescription"  :   { "de": "Ein fabistron-Theme für Ceres.", "en": "A fabistron theme for Ceres." },
+    "namespace"         :   "Fabistron",
+    "author"            :   "Fabistron GmbH",
+    "keywords"          :   ["plentymarkets", "plugins", "layout", "theme", "ceres"],
+    "type"              :   "theme",
+    "require"           :   ["Ceres"],
+    "serviceProvider"   :   "Fabistron\\Providers\\FabistronServiceProvider",
+    "dataProviders"     :
+    [
+        {
+            "key"           :"Fabistron\\Containers\\FabistronContainer",
+            "name"          :"Stylesheet",
+            "description"   :"Add changes to the CSS file"
+        },
+        {
+            "key"           :"Fabistron\\Containers\\FabistronItemListContainer1",
+            "name"          :"First item list",
+            "description"   :"Display a configurable list of items in your online store"
+        },
+        {
+            "key"           :"Fabistron\\Containers\\FabistronItemListContainer2",
+            "name"          :"Second item list",
+            "description"   :"Display a configurable list of items in your online store"
+        },
+        {
+            "key"           :"Fabistron\\Containers\\FabistronItemListContainer3",
+            "name"          :"Third item list",
+            "description"   :"Display a configurable list of items in your online store"
+        }
+    ]
+}
